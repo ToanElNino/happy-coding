@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import WebView from './WebView';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const url = 'https://poe.com/chat/26muqg13jebi1qqqgan'; // Thay thế bằng URL trang web của bạn
+
+    return (
+        <div className="App" style={{ width: '100vw', height: '100vh' }}>
+            <WebView url={url} />
+        </div>
+    );
 }
 
 export default App;
