@@ -2,7 +2,7 @@ import React from 'react';
 import WebView from './WebView';
 
 function App() {
-    const url = 'https://poe.com/chat/26muqg13jebi1qqqgan'; // Thay thế bằng URL trang web của bạn
+    const url = 'https://poe.com'; // Thay thế bằng URL trang web của bạn
 
     return (
         <div className="App" style={{ width: '100vw', height: '100vh' }}>
